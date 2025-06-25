@@ -1,0 +1,409 @@
+body {
+    margin: 0px;
+    height: 100%;
+    background-color: #ffffff;
+    justify-content: center;
+    font-family: "Inter", Helvetica;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #443360;
+}
+
+a {
+    text-decoration: none;
+    color: #435130;
+}
+
+/*bubbles animation*/
+.bubble{
+    position:absolute;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    box-shadow: inset 0 0 2vw rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    animation: anim 16s ease-in-out infinite;
+    left:10vw;
+    top:10vw;
+}
+.bubble:nth-child(1) {
+    left: 60vw;
+    top: 20vw;
+    zoom: 1.1;
+    animation-delay: -6s;
+}
+.bubble:nth-child(2){
+    left:40vw;
+    top:60vw;
+    zoom: 0.6;
+    animation-delay: -14s;
+}
+.bubble:nth-child(3) {
+    left: 100vw;
+    top: 10vw;
+    zoom:0.8;
+    animation-delay: -8s;
+}
+.bubble:nth-child(4) {
+    left: 40vw;
+    top: 35vw;
+    zoom: 1.2;
+    animation-delay: -2s;
+}
+.bubble:nth-child(5) {
+    left: 120vw;
+    top: 70vw;
+    zoom: 0.7;
+    animation-delay: -10s;
+}
+@keyframes anim{
+    0%, 100%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+.bubble span{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble span:nth-child(1){
+    inset: 1vw;
+    border-left: 1vw solid #215c84;
+    filter: blur(0.8vw);
+}
+.bubble span:nth-child(2) {
+    inset: 1vw;
+    border-right: 1vw solid #443360;
+    filter: blur(0.8vw);
+}
+.bubble span:nth-child(3) {
+    inset: 2vw;
+    border-top: 1vw solid #435130;
+    filter: blur(0.8vw);
+}
+.bubble span:nth-child(4) {
+    inset: 3vw;
+    border-left: 1vw solid #443360;
+    filter: blur(1vw);
+}
+.bubble span:nth-child(5) {
+    inset: 1vw;
+    border-bottom: 1vw solid #fff;
+    filter: blur(0.8vw);
+    transform: rotate(330deg);
+}
+
+/*constant top part of the screen with the links to the work, about and contacts windows*/
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 3vw;
+    right: 3vw;
+    opacity: 0.7;
+}
+.content a{
+    color: #ffffff;
+}
+
+.work {
+    margin-right: 2vw;
+    font-weight:500px;
+    font-size: 3vw;
+}
+
+
+.intro{
+    position: relative;
+}
+
+#start{
+    opacity: 90%;
+}
+
+.h {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-weight: 500px;
+    font-size: 6vw;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+
+/*footer*/
+.footer {
+    display: inline-flex;
+    padding-bottom: 4vw;
+    padding-top: 2vw;
+}
+
+.made-by-kris {
+    margin-left: 4vw;
+    font-weight: 400;
+    font-size: 1vw;
+    white-space: nowrap;
+}
+
+.footer-right {
+    display: inline-flex;
+    gap: 2vw;
+    position: absolute;
+    right: 4vw;
+
+}
+
+
+.div1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.text {
+    color: #443360;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.icons-arrow {
+    position: relative;
+    width: 1vw;
+}
+
+.img {
+    padding-left: 6vw;
+    width: 1.3vw;
+}
+
+/*work homesite*/
+
+.portfolio-item {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-left: 4vw;
+    padding-top: 3vw;
+}
+
+.portfolio-item-2 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-left: 55%;
+    padding-top: 3vw;
+}
+
+.portfolio-item-3 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-left: 50%;
+    padding-top: 3vw;
+}
+
+.portfolio-item-4 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-left: 65%;
+    padding-top: 3vw;
+}
+
+.title {
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    position: relative;
+}
+
+.artwork {
+    margin-left: 1vw;
+    position: relative;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.icons-arrow-2 {
+    position: relative;
+    width: 1vw;
+}
+
+.devil{
+    width: 30vw;
+    height: auto;
+    object-fit: cover;
+
+}
+.homegirl{
+    width: 25vw;
+}
+.fish{
+    width: 30vw;
+}
+.head{
+    width: 40vw;
+}
+.forester{
+    width: 20vw;
+}
+
+.anima{
+    width: 40vw;
+}
+
+/*ABOUT me*/
+
+.paragraph {
+    font-weight: 500;
+    font-size: 3vw;
+    padding: 2%;
+    color: #215c84;
+}
+
+.scroll{
+    overflow: hidden;
+    display: flex;
+}
+.programs {
+    color: #435130;
+    display: flex;
+    width: 200%;
+    white-space: nowrap;
+    position: relative;
+    animation: floatText 20s infinite linear;
+}
+
+.programs p{
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+@keyframes floatText {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-20%);
+    } 
+}
+
+/*experience/ contacts*/
+.aboutme{
+    display: flex;
+}
+
+.me{
+    padding: 1vw;
+    padding-right: 4vw;
+    padding-top: 3vw;
+}
+.me1{
+    z-index: 1;
+    width: 40vw;
+    top: 5vw;
+    left:1vw;
+    opacity: 60%;
+    position: relative;
+}
+.me2{
+    z-index: 2;
+    width: 40vw;
+    opacity: 80%;
+    position: absolute;
+    left:5vw;
+
+}
+
+.experience {
+    padding-top: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-2 {
+    display: inline-flex;
+}
+
+.experience-title {
+    width: 40vw;
+}
+
+
+.was {
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.wo {
+    padding-top: 1vw;
+    font-weight: 400;
+    font-size: 1vw;
+}
+.year {
+    width: 8vw;
+    padding:2vw;
+    padding-top: 4vw;
+    opacity: 0.4;
+    font-weight: 500;
+    font-size: 2vw;
+    text-align: right;
+}
+
+/*3d*/
+
+.projects{
+    padding: 5vw;
+    padding-top: 10vw;
+    font-size:4vw;
+    font-weight: 500;
+    color: #215c84;
+    
+}
+
+.projtext{
+    display: inline-flex;
+    margin-bottom: 5vw;
+}
+
+.projtit{
+    white-space: nowrap;
+    margin: 2vw;
+    font-weight: 500px;
+    font-size: 3vw;
+
+}
+
+p{
+    margin: 2vw;
+    padding-top: 1vw;
+    font-weight: 500px;
+    font-size: 2vw;
+}
+
+
+/*videos*/
+
+.vids{
+    margin: 2vw;
+    height: 30vw;
+}
+
+/*moreprojects*/
+
+.more{
+    padding-left: 2vw;
+    gap: 2vw;
+    display: inline-flex;
+}
+
+.portfmore{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1vw;
+}
