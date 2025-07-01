@@ -58,10 +58,10 @@ a {
 }
 @keyframes anim{
     0%, 100%{
-        transform: translateY(-10px);
+        transform: translateY(-10vw);
     }
     50%{
-        transform: translateY(10px);
+        transform: translateY(10vw);
     }
 }
 .bubble span{
@@ -110,19 +110,43 @@ a {
     color: #ffffff;
 }
 
+.intro {
+    position: relative;
+}
+
+#start {
+    opacity: 90%;
+}
+
+/*hover and click animation underline*/
 .work {
     margin-right: 2vw;
     font-weight:500px;
     font-size: 3vw;
-}
-
-
-.intro{
+    display: inline-block;
     position: relative;
 }
+    
+.work:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5vw;
+    bottom: -1vw;
+    left: 0;
+    background-color:#ffffff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+    
+.work:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;     
+}
 
-#start{
-    opacity: 90%;
+.work.active::after {
+    transform: scaleX(1);             
 }
 
 .h {
@@ -133,7 +157,31 @@ a {
     font-size: 6vw;
     color: #ffffff;
     opacity: 0.7;
+    display: inline-block;
 }
+    
+.h:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5vw;
+    bottom: -1vw;
+    left: 0;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+    
+.h:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+    
+.h.active::after {
+    transform: scaleX(1);
+}
+
 
 
 /*footer*/
@@ -182,37 +230,46 @@ a {
 }
 
 /*work homesite*/
-
+.workrow {
+    display: flex;
+}
 .portfolio-item {
     display: inline-flex;
     flex-direction: column;
     gap: 1vw;
-    margin-left: 4vw;
-    padding-top: 3vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
 }
 
 .portfolio-item-2 {
     display: inline-flex;
     flex-direction: column;
     gap: 1vw;
-    margin-left: 55%;
-    padding-top: 3vw;
+    margin-left: 15vw;
+    margin-top:20vw;
 }
 
 .portfolio-item-3 {
     display: inline-flex;
     flex-direction: column;
     gap: 1vw;
-    margin-left: 50%;
-    padding-top: 3vw;
+    margin-left: 15vw;
+    margin-top:15vw;
 }
 
 .portfolio-item-4 {
     display: inline-flex;
     flex-direction: column;
     gap: 1vw;
-    padding-left: 65%;
-    padding-top: 3vw;
+    padding-left: 20vw;
+    margin-top:15vw;
+}
+
+.portfolio-item-5 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-left: 15vw;
 }
 
 .title {
@@ -220,6 +277,7 @@ a {
     align-items: center;
     gap: 1vw;
     position: relative;
+    color: #435130;
 }
 
 .artwork {
@@ -247,7 +305,7 @@ a {
     width: 30vw;
 }
 .head{
-    width: 40vw;
+    width: 35vw;
 }
 .forester{
     width: 20vw;
@@ -358,13 +416,44 @@ a {
 /*3d*/
 
 .projects{
-    padding: 5vw;
-    padding-top: 10vw;
+    margin: 3vw;
     font-size:4vw;
     font-weight: 500;
     color: #215c84;
-    
+    position: relative;
 }
+    
+.projects:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5vw;
+    bottom: -1vw;
+    left: 0;
+    background-color:#215c84;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+    
+.projects:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+    
+.projects.active::after {
+    transform: scaleX(1);
+}
+
+.projects.small.active::after {
+    transform: scaleX(1);
+    background-color: #443360;
+}
+.projects.small{
+    font-size: 2vw;
+    color: #443360;
+}
+
 
 .projtext{
     display: inline-flex;
@@ -376,6 +465,7 @@ a {
     margin: 2vw;
     font-weight: 500px;
     font-size: 3vw;
+    color: #435130;
 
 }
 
@@ -384,6 +474,7 @@ p{
     padding-top: 1vw;
     font-weight: 500px;
     font-size: 2vw;
+    color: #435130;
 }
 
 
@@ -397,7 +488,7 @@ p{
 /*moreprojects*/
 
 .more{
-    padding-left: 2vw;
+    padding-left: 5vw;
     gap: 2vw;
     display: inline-flex;
 }
