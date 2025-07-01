@@ -151,7 +151,7 @@ a {
 
 .h {
     position: absolute;
-    bottom: 15vw;
+    bottom: 10vw;
     left: 5%;
     font-weight: 500px;
     font-size: 6vw;
@@ -182,15 +182,11 @@ a {
     transform: scaleX(1);
 }
 
-#start{
-    margin-bottom: 5vw;
-}
 
 /*footer*/
 .footer {
     display: inline-flex;
     padding-bottom: 4vw;
-    padding-top: 2vw;
 }
 
 .made-by-kris {
@@ -418,7 +414,8 @@ a {
 /*3d*/
 
 .projects{
-    margin: 5vw;
+    margin: 3vw;
+    top: 5vw;
     font-size:4vw;
     font-weight: 500;
     color: #215c84;
@@ -491,7 +488,8 @@ p{
 
 .more{
     padding-left: 3vw;
-    padding-top: 5vw;
+    padding-top: 10vw;
+    padding-bottom: 5vw;
     gap: 2vw;
     display: inline-flex;
 }
