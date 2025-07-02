@@ -229,6 +229,7 @@ a {
 
 /*work homesite*/
 .workrow {
+    margin-top: 5vw;
     display: flex;
 }
 .portfolio-item {
@@ -323,6 +324,7 @@ a {
 }
 
 .scroll{
+    margin-top: 10vw;
     overflow: hidden;
     display: flex;
 }
@@ -414,12 +416,12 @@ a {
 /*3d*/
 
 .projects{
-    margin: 3vw;
-    top: 5vw;
     font-size:4vw;
     font-weight: 500;
     color: #215c84;
     position: relative;
+    margin-left: 3vw;
+    top: 5vw;
 }
     
 .projects:after {
@@ -456,7 +458,6 @@ a {
 
 .projtext{
     display: inline-flex;
-    margin-bottom: 5vw;
 }
 
 .projtit{
@@ -481,6 +482,7 @@ p{
 
 .vids{
     margin: 2vw;
+    margin-top: 10vw;
     height: 30vw;
 }
 
